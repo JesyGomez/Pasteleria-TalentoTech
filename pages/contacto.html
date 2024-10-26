@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería | Dulces y Sueños</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header id="header">
+        <a href="../index.html">
+            <img src="../assets/img/logo-pasteleria.png" alt="Logo de la Pastelería Pasteles y Sueños">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/productos.html">Productos</a></li>
+                <li><a href="../pages/precios.html">Precios</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="../pages/carrito.html"><img src="../assets/img/carrito-1.png" alt="Logo de carrito de compras"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="box">
+        <!-- Formulario de contacto -->
+        <div class="contacto form">
+          <h3>¡Envíanos un mensaje!</h3>
+          <form id="formulario" action="https://formsubmit.co/pasteleriadelicias@gmail.com" method="POST">
+            <div class="formBox">
+              <div class="inputBox">
+                <span>Nombre</span>
+                <input type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre">
+                <div class="error-mensaje" id="errorNombre"></div>
+              </div>
+              <div class="inputBox">
+                <span>Email</span>
+                <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com">
+                <div class="error-mensaje" id="emailError"></div>
+              </div>
+              <div class="inputBox">
+                <span>Teléfono</span>
+                <input type="text" placeholder="011 1234 5678" id="telefono" name="telefono">
+                <div class="error-mensaje" id="telefonoError"></div>
+              </div>
+              <div class="inputBox">
+                <span>Mensaje</span>
+                <textarea placeholder="Déjanos tu mensaje" id="mensaje" name="mensaje" minlength="10"></textarea>
+                <div class="error-mensaje" id="mensajeError"></div>
+              </div>
+              <div class="inputBox">
+                <input type="submit" value="Enviar">
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Información de contacto -->
+        <div class="contacto info">
+          <h3>Encuéntranos en:</h3>
+          <div class="infoBox">
+            <div>
+              <span><i class="bi bi-geo-alt"></i></span>
+              <p>Avenida del Pastel 123, Buenos Aires, Argentina</p>
+            </div>
+            <div>
+              <span><i class="bi bi-envelope"></i></span>
+              <a href="mailto:pasteleriadelicias@email.com">pasteleriadelicias@email.com</a>
+            </div>
+            <div>
+              <span><i class="bi bi-telephone-fill"></i></span>
+              <a href="tel:01112345678">Tel.: 011 1234 5678</a>
+            </div>
+          </div>
+          <div class="contactame">
+            <div class="contactotitulo">
+              <h1 class="animate__animated animate__flip animate__delay-1s">Estamos ubicados en:</h1>
+            </div>
+          </div>
+          
+          <!-- Mapa de ubicación -->
+            <div class="contacto map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d209818.97471271464!2d-58.94947960790425!3d-34.74497413353835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spasteler%C3%ADa!5e0!3m2!1ses!2sar!4v1714245095624!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450"></iframe>
+            </div>
+          </div>
+    
+    </main>
+    <footer>
+        <a href="#header">
+            <img class="flecha" src="../assets/img/up-arrows.png" alt="Flecha hacia arriba">
+        </a>
+        
+        <!-- Sección de ayuda al cliente -->
+        <nav>
+          <img src="../assets/img/help.png" alt="Logo ayuda, preguntas, sugerencias">
+            <ul>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Soporte</a></li>
+            </ul>
+        </nav>
+    
+          <!-- Redes sociales -->
+          <div class="animate__animated animate__fadeInBottomRight animate__delay-0.5s">
+            <ul class="contacto-redes-sociales">
+              <li><a href="https://www.instagram.com/pasteleriadelicias" target="_blank"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="https://www.facebook.com/pasteleriadelicias" target="_blank"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="mailto:pasteleriadelicias@email.com"><i class="bi bi-envelope"></i></a></li>
+              <li><a href="https://wa.me/541112345678" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Sección de redes sociales -->
+        <div>
+            <h3>¡Síguenos!</h3>
+            <div class="RedesSociales">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    
+        <!-- Información legal -->
+        <div>
+            <p>&copy; 2024 Dulces y Sueños. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="js/script.js"></script>
+    </body>
+    </html>
+        
+</body>
+
+</html>
