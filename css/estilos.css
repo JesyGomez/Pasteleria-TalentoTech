@@ -369,9 +369,10 @@ footer nav ul {
 }
 
 footer nav ul li {
-    margin: 5px 0;
+    margin: 15px 0;
 }
 
+/* Redes Sociales */
 .redesSociales {
     display: flex;
     justify-content: center;
@@ -387,12 +388,33 @@ footer nav ul li {
 
 .redesSociales a:hover {
     color: var(--color-enlace-hover);
+    transform: scale(1.5); 
+
+}
+
+/* Ícono de WhatsApp fijo en el lado derecho */
+.redesSociales a.whatsapp {
+    font-size: 3rem;
+    position: fixed;
+    bottom: 30px;
+    right: 30px; 
+    background-color: #48024d; 
+    border-radius: 50%; 
+    padding: 20px; 
+    color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.redesSociales a.whatsapp:hover {
+    transform: scale(1.15); 
 }
 
 footer p {
     margin-top: 20px;
     font-size: 0.9rem;
-    color: #777; 
+    color: #424141; 
 }
 
 /* Flecha hacia arriba */
