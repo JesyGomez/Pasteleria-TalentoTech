@@ -94,6 +94,7 @@ main {
     overflow: hidden;
     margin-bottom: 20px; 
     border-radius: 20px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
 }
 
 #miVideo {
@@ -164,9 +165,8 @@ p.descripcion-pasteleria {
     max-width: 700px;
     padding: 10px;
     background-color: #fdf3f7; /* Fondo rosado suave */
-    border-left: 5px solid #48024d;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 8px 8px 8px fuchsia;
 }
 
 /* Estilos para el título */
