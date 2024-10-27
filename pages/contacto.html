@@ -24,66 +24,62 @@
         </nav>
     </header>
     <main>
-      <div class="box">
-        <!-- Formulario de contacto -->
-        <div class="contacto form">
-          <h1>¡Envíanos un mensaje!</h1>
-          <form id="formulario" action="https://formsubmit.co/pasteleriadelicias@gmail.com" method="POST">
-            <div class="formBox">
-              <div class="inputBox">
-                <span>Nombre</span>
-                <input type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre">
-                <div class="error-mensaje" id="errorNombre"></div>
-              </div>
-              <div class="inputBox">
-                <span>Email</span>
-                <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com">
-                <div class="error-mensaje" id="emailError"></div>
-              </div>
-              <div class="inputBox">
-                <span>Teléfono</span>
-                <input type="text" placeholder="011 1234 5678" id="telefono" name="telefono">
-                <div class="error-mensaje" id="telefonoError"></div>
-              </div>
-              <div class="inputBox">
-                <span>Mensaje</span>
-                <textarea placeholder="Déjanos tu mensaje" id="mensaje" name="mensaje" minlength="10"></textarea>
-                <div class="error-mensaje" id="mensajeError"></div>
-              </div>
-              <div class="inputBox">
-                <input type="submit" value="Enviar">
-              </div>
+<div class="contactBox">
+    <!-- Formulario de contacto -->
+    <div class="contactForm">
+        <h1>¡Envíanos un mensaje!</h1>
+        <form id="formulario" action="https://formsubmit.co/pasteleriadelicias@gmail.com" method="POST">
+            <div class="formGrid">
+                <div class="inputField">
+                    <span>Nombre</span>
+                    <input type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre">
+                    <div class="errorMessage" id="errorNombre"></div>
+                </div>
+                <div class="inputField">
+                    <span>Email</span>
+                    <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com">
+                    <div class="errorMessage" id="emailError"></div>
+                </div>
+                <div class="inputField">
+                    <span>Teléfono</span>
+                    <input type="text" placeholder="011 1234 5678" id="telefono" name="telefono">
+                    <div class="errorMessage" id="telefonoError"></div>
+                </div>
+                <div class="inputField">
+                    <span>Mensaje</span>
+                    <textarea placeholder="Déjanos tu mensaje" id="mensaje" name="mensaje" minlength="10"></textarea>
+                    <div class="errorMessage" id="mensajeError"></div>
+                </div>
+                <div class="inputField">
+                    <input type="submit" value="Enviar" class="submitBtn">
+                </div>
             </div>
-          </form>
+        </form>
+    </div>
+    <!-- Información de contacto -->
+    <div class="contactInfo">
+        <h2>Encuéntranos en:</h2>
+        <div class="infoGrid">
+            <div class="infoItem">
+                <span><i class="bi bi-geo-alt"></i></span>
+                <p>Avenida del Pastel 123, Buenos Aires, Argentina</p>
+            </div>
+            <div class="infoItem">
+                <span><i class="bi bi-envelope"></i></span>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2854C5"><path d="M638-80 468-250l56-56 114 114 226-226 56 56L638-80ZM480-520l320-200H160l320 200Zm0 80L160-640v400h206l80 80H160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v174l-80 80v-174L480-440Zm0 0Zm0-80Zm0 80Z"/></svg><a href="mailto:pasteleriadelicias@email.com">pasteleriadelicias@email.com</a>
+            </div>
+            <div class="infoItem">
+                <span><i class="bi bi-telephone-fill"></i></span>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2854C5"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg><a href="tel:01112345678">Tel.: 011 1234 5678</a>
+            </div>
         </div>
-        <!-- Información de contacto -->
-        <div class="">
-          <h2>Encuéntranos en:</h2>
-          <div class="">
-            <div>
-              <span><i class="bi bi-geo-alt"></i></span>
-              <p>Avenida del Pastel 123, Buenos Aires, Argentina</p>
-            </div>
-            <div>
-              <span><i class="bi bi-envelope"></i></span>
-              <a href="mailto:pasteleriadelicias@email.com">pasteleriadelicias@email.com</a>
-            </div>
-            <div>
-              <span><i class="bi bi-telephone-fill"></i></span>
-              <a href="tel:01112345678">Tel.: 011 1234 5678</a>
-            </div>
-          </div>
-          <div class="">
-            <div class="">
-              <h3>Estamos ubicados en:</h3>
-            </div>
-          </div>
-          
-          <!-- Mapa de ubicación -->
-            <div class="">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d209818.97471271464!2d-58.94947960790425!3d-34.74497413353835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spasteler%C3%ADa!5e0!3m2!1ses!2sar!4v1714245095624!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450"></iframe>
-            </div>
-          </div>
+        <!-- Mapa de ubicación -->
+        <div class="mapContainer">
+            <h3>Estamos ubicados en:</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d209818.97471271464!2d-58.94947960790425!3d-34.74497413353835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spasteler%C3%ADa!5e0!3m2!1ses!2sar!4v1714245095624!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="450"></iframe>
+        </div>
+    </div>
+</div>
     
     </main>
     <footer>
