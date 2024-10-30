@@ -36,45 +36,63 @@ body {
     font-family: "PT Serif", serif;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to right top, #f2d3e4, #eec5dd, #eab6d7, #e5a8d1, #e09acc, #e09dcf, #e09fd2, #e0a2d5, #e6b6df, #ecc9e8, #f2ddf1, #f9f0f9);
+    background-image: linear-gradient(to right top, #f8eaf1, #f6e3ee, #f3dde9, #f1d7e4, #efd1df, #ecd5e3, #e9d8e7, #e6dced, #f0e9f3, #f9f6f9, #ffffff, #ffffff);
     background-size: cover; /* O 'contain' si prefiero que se ajuste sin recortar */
     background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
 }
 
 /* Estilo del header */
 header {
-    background-color: var(--color-header-fondo);
-    padding: 10px;
+    width: 100%;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-fondo);
 }
 
-header img { 
-    width: 110px;
+header a img {
+    width: 120px; 
+    height: 120px;
+    border-radius: 50%; 
+    box-shadow: 0 4px 8px rgba(236, 2, 209, 0.947);
+    object-fit: contain; 
+    display: block; 
+    margin: 0 auto; 
 }
 
-nav {
-    display: flex; 
-    justify-content: center; 
-    
+/* Estilos para el menú */
+header nav {
+    flex-grow: 1;
+    margin-left: 20px;
 }
 
-nav ul {
-    list-style-type: none; 
+header ul {
+    list-style: none;
     display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 15px; 
+    padding: 0;
+    margin: 0;
 }
 
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    font-size: 1.7rem;
+header li a {
     text-decoration: none;
-    color: var(--color-enlace); 
+    color: var(--color-acento);
+    font-size: 1.6rem;
     font-weight: bold;
+    padding: 5px 10px;
+}
+
+header li a:hover {
+    color: var(--color-hover); 
+}
+
+/* Estilos específicos para el carrito */
+header .carrito {
+    width: 60px;
+    height: auto;
+    vertical-align: middle;
 }
 
 nav ul li a:hover {
@@ -130,19 +148,23 @@ main {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
     letter-spacing: 1px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 h2, h3, h4 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #292929d0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
     letter-spacing: 1px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .contenido p {
@@ -194,7 +216,6 @@ h2.titulo-productos {
 
 /* Productos Destacados */
 
-/* Estilos para el contenedor, título e imagen */
 .banner-tortas {
     text-align: center; 
     position: relative; 
@@ -331,7 +352,7 @@ h2.titulo-productos {
     margin: 0 auto;
     text-align: left;
 }
-
+/* Probando medidas responsivas */
 @media screen and (max-width: 768px) {
     .nosotros {
         grid-template-columns: 1fr;
@@ -377,7 +398,36 @@ h2.titulo-productos {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
+/* Galeria */
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    div{
+        text-align: center;
+        /* background-color: var(--color-primario); */
+        border: 1px solid grey;
+        color: #333;
+        width: 220px;
+        height: 220px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        box-shadow: 10px 35px 12px rgba(0, 0, 0, 0.198);
+        img{
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        h4{
+            font-size: 0.7rem;
+            font-weight: bold;
+            color: var(--color-acento);
+        }
+    }
+}
 
 /* Testimonios */
 .testimonios {
@@ -399,7 +449,7 @@ h2.titulo-productos {
     background-color: #fff;
     padding: 1.5rem;
     border-radius: 8px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     font-style: italic;
     position: relative;
 }
@@ -418,12 +468,10 @@ h2.titulo-productos {
     color: #333;
 }
 
-
-/* Detalles decorativos, como comillas */
 .testimonio::before {
     content: '“'; /* Comillas iniciales decorativas */
     font-size: 3rem;
-    color: var(--color-acento); /* Color destacado para las comillas */
+    color: var(--color-acento); /* Color para las comillas */
     position: absolute;
     top: -10px;
     left: -10px;
@@ -432,14 +480,11 @@ h2.titulo-productos {
 .testimonio::after {
     content: '”'; /* Comillas finales decorativas */
     font-size: 3rem;
-    color: var(--color-acento); /* Color destacado para las comillas */
+    color: var(--color-acento); /* Color para las comillas */
     position: absolute;
-    bottom: -10px;
-    right: -10px;
+    bottom: 10px;
+    right: 10px;
 }
-
-
-
 
 /* Estilos generales para la tabla de precios */
 .tabla-precios {
@@ -478,7 +523,6 @@ h2.titulo-productos {
     background-color: #f9f9f9;
 }
 
-/* Hover en filas */
 .tabla-precios tbody tr:hover {
     background-color: #ffe6eb; 
 }
@@ -626,11 +670,87 @@ h2.titulo-productos {
     }
 }
 
+/* Carrito, este es solo un modelo, no tiene ninguna funcionalidad */
+#carrito {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+        h1{
+            color: var(--color-acento);
+        }
+        h3{
+            font-size: 20px;
+            color: var(--color-texto-secundario);
+        }
+}
+
+.tabla-detalle {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+.tabla-detalle caption {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.tabla-detalle th, .tabla-detalle td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tabla-detalle th {
+    font-weight: bold;
+    background-color: #f7f7f7;
+}
+
+.producto-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cantidad-controles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrito-total {
+    text-align: right;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #333;
+}
+
+.btn-comprar {
+    width: 100%;
+    padding: 1rem;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+
 
 /* Footer */
-footer {
+.footer {
     background-color: var(--color-fondo);
     color: var(--color-texto-primario); 
+    display: flex;
+    flex-direction: column; /* Las cajas se alinean en fila */
+    justify-content: center; /* Centro el contenido en el footer */
     text-align: center;
     padding: 20px;
     margin-top: 20px;
@@ -649,10 +769,11 @@ footer a:hover {
 
 footer nav {
     margin-bottom: 20px;
+    
 }
 
 footer nav h4 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
     color: var(--color-texto-primario); 
 }
@@ -666,6 +787,21 @@ footer nav ul li {
     margin: 15px 0;
 }
 
+/* Flecha hacia arriba */
+footer .flecha {
+    width: 8vh; 
+    height: 8vh;
+    background-color: var(--color-fondo);
+    border-radius: 50%; 
+    box-shadow: 0 4px 8px rgba(139, 1, 160, 0.947);
+    margin: 20px auto;
+    padding: 15px; 
+    color: #fff; 
+}
+footer .flecha:hover{
+    color: var(--color-enlace-hover);
+    transform: scale(1.2); 
+}
 /* Redes Sociales */
 .redesSociales {
     display: flex;
@@ -683,7 +819,6 @@ footer nav ul li {
 .redesSociales a:hover {
     color: var(--color-enlace-hover);
     transform: scale(1.5); 
-
 }
 
 /* Ícono de WhatsApp fijo en el lado derecho */
@@ -692,7 +827,7 @@ footer nav ul li {
     position: fixed;
     bottom: 30px;
     right: 30px; 
-    background-color: #48024d; 
+    background-color: #56015c; 
     border-radius: 50%; 
     padding: 20px; 
     color: #fff; 
@@ -703,17 +838,5 @@ footer nav ul li {
 
 .redesSociales a.whatsapp:hover {
     transform: scale(1.15); 
-}
-
-footer p {
-    margin-top: 20px;
-    font-size: 0.9rem;
-    color: #424141; 
-}
-
-/* Flecha hacia arriba */
-footer .flecha {
-    width: 40px;
-    margin-bottom: 20px;
 }
 

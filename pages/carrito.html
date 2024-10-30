@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras | Dulces y Sueños</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header id="header">
+        <a href="../index.html">
+            <img src="../assets/img/logo-pasteleria.png" alt="Logo de la Pastelería Pasteles y Sueños">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/productos.html">Productos</a></li>
+                <li><a href="../pages/precios.html">Precios</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="../pages/carrito.html"><img class="carrito" src="../assets/img/carrito-1.png" alt="Logo de carrito de compras"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Clase Modelo porque no tengo ni idea de como hacer una real jaja! -->
+        <section id="carrito">
+            <div class="carrito-container">
+                <h1>Carrito de Compras</h1>
+                <!-- <h2>Detalle de su compra</h2> -->
+                <!-- Tabla con imagen del producto y título de detalle de compra -->
+                <table class="tabla-detalle">
+                    <caption>Detalle de Compra</caption>
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="../assets/img/torta-chocolate-decochocolate.jpg" alt="Pastel de Chocolate" class="producto-img"></td>
+                            <td>Pastel de Chocolate</td>
+                            <td>$5000</td>
+                            <td>
+                                <div class="cantidad-controles">
+                                    <button class="btn-disminuir">-</button>
+                                    <input type="number" value="1" min="1" class="input-cantidad">
+                                    <button class="btn-aumentar">+</button>
+                                </div>
+                            </td>
+                            <td>$5000</td>
+                            <td><button class="btn-eliminar">Eliminar</button></td>
+                        </tr>
+                        <!-- Más filas según se necesite -->
+                    </tbody>
+                </table>
+        
+                <div class="carrito-total">
+                    <h4>Total:</h4>
+                    <p>$10000</p>
+                </div>
+                <button class="btn-comprar">Finalizar Compra</button>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <footer class="footer">
+        <a href="#header">
+            <img class="flecha" src="../assets/img/up-arrows.png" alt="Flecha hacia arriba">
+        </a>
+        
+        <nav>
+            <img src="../assets/img/logo-explorar.png" alt="Logo busqueda">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/productos.html">Productos</a></li>
+                <li><a href="../pages/precios.html">Precios</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="../pages/carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    
+        <nav>
+            <img src="../assets/img/help.png" alt="Logo ayuda, preguntas, sugerencias">
+            <ul>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Soporte</a></li>
+            </ul>
+        </nav>
+    
+        <div>
+            <h4>¡Síguenos!</h4>
+            <div class="redesSociales">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://wa.me/1234567890" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    
+        <div>
+            <p>&copy; 2024 Dulces y Sueños. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="../js/main.js"></script>
+</body>
+</html>
