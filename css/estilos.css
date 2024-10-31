@@ -315,6 +315,9 @@ h2.titulo-productos {
     border-radius: 5px;
     cursor: pointer;
 }
+.Btn-verMas:hover {
+    background-color:var(--color-boton-hover);
+}
 
 .btn-agregar-carrito {
     background-color: #94039eb4;
@@ -328,22 +331,6 @@ h2.titulo-productos {
 
 .btn-agregar-carrito:hover {
     background-color:var(--color-boton-hover);
-}
-
-.btnAgregarCarrito { 
-    background-color: var(--color-boton);
-    color: #ffffff; 
-    border: none;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-}
-
-.btnAgregarCarrito:hover {
-    background-color: var(--color-boton-hover); 
 }
 
 /* Nosotros */
@@ -392,7 +379,7 @@ h2.titulo-productos {
 
 .nosotros-imagenes {
     display: flex;
-    gap: 1rem;
+    gap: 1.2rem;
     justify-content: center;
 }
 
@@ -400,7 +387,7 @@ h2.titulo-productos {
     width: 100%;
     max-width: 350px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Galeria */
