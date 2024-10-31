@@ -158,7 +158,7 @@ h2, h3, h4 {
     text-align: center;
     letter-spacing: 1px;
     padding-top: 15px;
-    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
 }
 
 .contenido p {
@@ -173,16 +173,16 @@ h2, h3, h4 {
 /* Estilos para el párrafo */
 p.descripcion-pasteleria {
     font-family: 'Georgia', serif;
-    font-size: 18px;
-    color: #5e3c58;
+    font-size: 1.4rem;
+    color: #400352;
     text-align: center;
-    line-height: 1.6;
+    line-height: 1.6em;
     margin: 20px auto;
     max-width: 700px;
     padding: 10px;
-    background-color: #fdf3f7; 
+    background-color: #fddbe8; 
     border-radius: 8px;
-    box-shadow: 8px 8px 8px fuchsia;
+    box-shadow: 8px 8px 8px rgb(255, 255, 255);
 }
 
 /* Estilos para el título */
@@ -333,6 +333,53 @@ h2.titulo-productos {
     background-color:var(--color-boton-hover);
 }
 
+/* Aside productos */
+.aside-promociones {
+    flex: 1;
+    padding: 1.5rem;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.aside-promociones h2, h3, h4 {
+    color: #333;
+    margin-top: 0;
+}
+
+.aside-promociones p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.img-promocion {
+    width: 10%;
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+
+.lista-promociones {
+    list-style: none;
+    padding: 0;
+    color: #333;
+}
+
+.lista-promociones li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.btn-suscribirse {
+    background-color: var(--color-enlace-hover);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
 /* Nosotros */
 .nosotros {
     padding: 3rem 1rem;
@@ -479,24 +526,68 @@ h2.titulo-productos {
     right: 10px;
 }
 
+/* Galeria Inicio */
+.galeriaInicio h4{
+    color: #48024d;
+    font-size: 3rem;
+}
+.container{
+    margin: 100px 0 0 200px;
+    width: 80%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.container img{
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0 0 20px rgb(252, 251, 251);
+}
+.container img:hover{
+    width: 30%;
+}
+
 /* Estilos generales para la tabla de precios */
-.tabla-precios {
+.mainContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "precios galeriaAside";
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Asigna cada sección a su área específica */
+.precios {
+    grid-area: precios;
+}
+
+.galeriaAside {
+    grid-area: galeriaAside;
+}
+
+/* Estilos de la tabla de precios */
+.tablaPrecios {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
 }
 
-.tabla-precios table {
+.tablaPrecios table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 1.2rem;
     color: #333;
 }
 
 /* Estilo para las cabeceras */
-.tabla-precios thead th {
+.tablaPrecios thead th {
     background-color: #ffb3c1; 
     color: #333;
     padding: 12px;
@@ -506,34 +597,66 @@ h2.titulo-productos {
 }
 
 /* Estilo para las celdas del cuerpo */
-.tabla-precios tbody td {
+.tablaPrecios tbody td {
     padding: 12px;
     border-bottom: 1px solid #e6e6e6;
 }
 
 /* Alterna color de las filas */
-.tabla-precios tbody tr:nth-child(even) {
+.tablaPrecios tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-.tabla-precios tbody tr:hover {
+.tablaPrecios tbody tr:hover {
     background-color: #ffe6eb; 
 }
 
-/* Alineo el texto al centro en celdas específicas*/
-.tabla-precios tbody td:nth-child(3) {
+/* Alineo el texto al centro en celdas específicas */
+.tablaPrecios tbody td:nth-child(3) {
     text-align: right;
 }
 
+/* Ajusta los estilos de la galería */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.galeria .item {
+    text-align: center;
+    width: 220px;
+    height: 220px;
+    padding: 10px;
+    box-shadow: 10px 35px 12px rgba(0, 0, 0, 0.2);
+}
+
+.galeria .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-    .tabla-precios {
+    .mainContent {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "precios"
+            "galeriaAside";
+    }
+
+    .tablaPrecios {
         width: 100%;
     }
     
-    .tabla-precios table {
+    .tablaPrecios table {
         font-size: 14px;
     }
 }
+
 
 /* Contacto */
 .contactBox {
@@ -734,86 +857,113 @@ h2.titulo-productos {
     cursor: pointer;
     margin-top: 1.5rem;
 }
-
+.btn-eliminar {
+    color: red;
+    font-size: 1.5rem;
+}
 
 
 /* Footer */
 .footer {
     background-color: var(--color-fondo);
-    color: var(--color-texto-primario); 
-    display: flex;
-    flex-direction: column; /* Las cajas se alinean en fila */
-    justify-content: center; /* Centro el contenido en el footer */
+    color: var(--color-texto-primario);
     text-align: center;
+    font-size: 1.5rem;
     padding: 20px;
     margin-top: 20px;
 }
 
-footer a {
-    color: var(--color-enlace); 
-    text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s ease;
+/* Contenedor principal */
+.footerContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
-footer a:hover {
-    color: var(--color-enlace-hover); 
+.footerNav {
+    display: flex;
+    gap: 90px;
 }
 
-footer nav {
-    margin-bottom: 20px;
-    
+.footerBusqueda, .footerAyuda {
+    text-align: center;
 }
 
-footer nav h4 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: var(--color-texto-primario); 
-}
-
-footer nav ul {
+.footerBusqueda ul, .footerAyuda ul {
     list-style: none;
     padding: 0;
 }
 
-footer nav ul li {
-    margin: 15px 0;
+.footerBusqueda li, .footerAyuda li {
+    margin: 8px 0;
 }
 
-/* Flecha hacia arriba */
-footer .flecha {
-    width: 8vh; 
-    height: 8vh;
-    background-color: var(--color-fondo);
-    border-radius: 50%; 
-    box-shadow: 0 4px 8px rgba(139, 1, 160, 0.947);
-    margin: 20px auto;
-    padding: 15px; 
-    color: #fff; 
+.footerBusqueda img, .footerAyuda img {
+    display: block;
+    margin: 0 auto 10px;
 }
-footer .flecha:hover{
-    color: var(--color-enlace-hover);
-    transform: scale(1.2); 
-}
+
 /* Redes Sociales */
+.footerSocial {
+    text-align: center;
+}
+
 .redesSociales {
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 10px;
 }
 
 .redesSociales a {
     font-size: 2rem;
-    margin: 0 10px;
-    color: var(--color-enlace); 
-    transition: color 0.3s ease;
+    color: var(--color-enlace);
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .redesSociales a:hover {
     color: var(--color-enlace-hover);
-    transform: scale(1.5); 
+    transform: scale(1.2);
 }
 
+/* Información legal */
+.footerLegal {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+/* Flecha hacia arriba */
+.flecha {
+    width: 8vh;
+    height: 8vh;
+    background-color: var(--color-fondo);
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(139, 1, 160, 0.947);
+    margin: 20px auto;
+    padding: 15px;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.flecha:hover {
+    color: var(--color-enlace-hover);
+    transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footerContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerNav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
 /* Ícono de WhatsApp fijo en el lado derecho */
 .redesSociales a.whatsapp {
     font-size: 3rem;

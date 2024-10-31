@@ -41,7 +41,6 @@
 
         <!-- Sección para los productos destacados -->
         <section id="productos">
-               <h2>Nuestros Productos</h2>
             <div class="productosDestacados productos-grid">
 
                 <div class="producto">
@@ -77,9 +76,9 @@
                 </div>
 
                 <div class="producto">
-                    <img src="../assets/img/torta-chocolate-decochocolate.jpg" alt="cupcake frutilla y chocolate">
-                    <h3>Cupcake frutilla y chocolate</h3>
-                    <p>Cupcake frutilla, chocolate y crema</p>
+                    <img src="../assets/img/torta-chocolate-decochocolate.jpg" alt="Torta de chocolate">
+                    <h3>Torta de chocolate</h3>
+                    <p>Torta de chocolate</p>
                     <a href="./pages/productos.html">
                     <button class="Btn-verMas">Ver Más</button></a>
                 </div>
@@ -94,10 +93,16 @@
             </div>
         </section>
 
-        <section class="promociones">
-            <h2 class="titulo-productos">Promociones del Mes</h2>
-            <p class="descripcion-pasteleria">Aprovecha nuestras ofertas especiales de este mes. ¡Descuentos de hasta el 20% en ciertos productos!</p>
-        </section>
+        <aside class="aside-promociones">
+            <h2>Promociones del Mes</h2>
+            <p>Aprovecha nuestras ofertas especiales de este mes. ¡Descuentos de hasta el 20% en ciertos productos!</p>
+            <ul class="lista-promociones">
+                <li>20% de descuento en tortas de chocolate</li>
+                <li>15% de descuento en pasteles de cumpleaños</li>
+                <li>10% en todos los pedidos de catering</li>
+            </ul>
+        </aside>
+
 
         <section class="nosotros">
             <div class="nosotros-contenido">
@@ -122,7 +127,6 @@
             </div>
         </section>
 
-       
                 <!-- Sección de Testimonios -->
                 <section class="testimonios">
                     <h4>Lo Que Dicen Nuestros Clientes</h4>
@@ -153,50 +157,68 @@
                         </div>
                     </div>
                 </section>
+
+                <section class="galeriaInicio">
+                    <h4>Algunas Delicias en Cupcake...</h4>
+                    <div class="container">
+                        <img src="./assets/img/cupcake-vainilla.jpg" alt="">
+                        <img src="./assets/img/cupcake-rosa.jpg" alt="">
+                        <img src="./assets/img/cupcake-frutilla-chocolate.jpg" alt="">
+                        <img src="./assets/img/cupcake-hombrecito.jpg" alt="">
+                        <img src="./assets/img/cupcake-frutilla.jpg" alt="">
+                    </div>
+                </section>
     </main>
 
     <footer class="footer">
         <a href="#header" class="footer-arrow">
             <img class="flecha" src="./assets/img/up-arrows.png" alt="Flecha hacia arriba">
         </a>
+    
+        <!-- Contenedor principal del footer -->
+        <div class="footerContainer">
             <!-- Sección de navegación principal -->
-        <nav>
-            <img src="./assets/img/logo-explorar.png" alt="Logo de busqueda">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/precios.html">Precios</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a href="./pages/carrito.html">Carrito</a></li>
-            </ul>
-        </nav>
+            <div class="footerNav">
+                <nav class="footerBusqueda">
+                    <img src="./assets/img/logo-explorar.png" alt="Logo de búsqueda">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="./pages/productos.html">Productos</a></li>
+                        <li><a href="./pages/precios.html">Precios</a></li>
+                        <li><a href="./pages/contacto.html">Contacto</a></li>
+                        <li><a href="./pages/carrito.html">Carrito</a></li>
+                    </ul>
+                </nav>
     
-        <!-- Sección de ayuda al cliente -->
-        <nav>
-            <img src="./assets/img/help.png" alt="Logo ayuda, sugerencia, dudas">
-            <ul>
-                <li><a href="#">Preguntas Frecuentes</a></li>
-                <li><a href="#">Política de Privacidad</a></li>
-                <li><a href="#">Términos y Condiciones</a></li>
-                <li><a href="#">Soporte</a></li>
-            </ul>
-        </nav>
-    
-        <!-- Sección de redes sociales -->
-        <div>
-            <h4>¡Síguenos!</h4>
-            <div class="redesSociales">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://wa.me/1234567890" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                <!-- Sección de ayuda al cliente -->
+                <nav class="footerAyuda">
+                    <img src="./assets/img/help.png" alt="Logo ayuda, sugerencia, dudas">
+                    <ul>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Soporte</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     
+            <!-- Sección de redes sociales -->
+            <div class="footerSocial">
+                <h4>¡Síguenos!</h4>
+                <div class="redesSociales">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://wa.me/1234567890" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+    
         <!-- Información legal -->
-        <div>
+        <div class="footerLegal">
             <p>&copy; 2024 Dulces y Sueños. Todos los derechos reservados.</p>
         </div>
     </footer>
+        
 </body>
 </html>
