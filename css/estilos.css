@@ -303,6 +303,17 @@ h2.titulo-productos {
 .producto p {
     font-size: 1rem;
     color: var(--color-texto-secundario);
+    padding-bottom: 20px;  
+}
+
+.Btn-verMas{
+    background-color: #94039eb4;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .btn-agregar-carrito {
