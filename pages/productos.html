@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/estilos.css" />
   </head>
   <body>
-    <header id="header">
+    <header id="header" class="header">
       <a href="../index.html">
         <img
           src="../assets/img/logo-pasteleria.png"
@@ -37,18 +37,60 @@
       </nav>
     </header>
 
-    <main>
-      <section id="productos">
-        <div class="banner-tortas">
-          <h1 class="titulo-tortas">¡Conoce Nuestras Creaciones Más Dulces!</h1>
-          <img
-            class="imagen-tortas"
-            src="../assets/img/varias-tortas-chocolate.jpg"
-            alt="Varias tortas"
-          />
-        </div>
-        <h2>Nuestros Productos</h2>
-        <div class="productosDestacados productos-grid">
+    <div class="banner-tortas">
+      <h1 class="titulo-tortas">¡Conoce nuestras creaciones más dulces!</h1>
+      <img
+        class="imagen-tortas"
+        src="../assets/img/varias-tortas-chocolate.jpg"
+        alt="Varias tortas"
+      />
+    </div>
+
+      <main class="productos-tortas-cup">
+        <aside class="aside aside-right">
+          <h2 class="titulo-productos">Alfajores</h2>
+          <div class="producto">
+            <img
+            src="../assets/img/alfajoresbañadosChocolate.jpg"
+            alt="Torta de chocolate"
+            />
+            <h3>Alfajores chocolate</h3>
+            <p>Bañados en chocolate</p>
+            <button class="btn-agregar-carrito">Añadir al Carrito</button>
+          </div>
+          <div class="producto">
+            <img
+            src="../assets/img/alfajoresBlancoNegro.jpg"
+            alt="Torta de chocolate"
+            />
+            <h3>Alfajores blanco y negro</h3>
+            <p>Torta de chocolate bañada con chocolate amargo</p>
+            <button class="btn-agregar-carrito">Añadir al Carrito</button>
+          </div>
+          <div class="producto">
+            <img
+            src="../assets/img/alfajoresLinea.webp"
+            alt="Torta de chocolate"
+            />
+            <h3>Chocolate y leche</h3>
+            <p>Riquisimos alfajores</p>
+            <button class="btn-agregar-carrito">Añadir al Carrito</button>
+          </div>
+          <!-- <div class="producto">
+            <img
+            src="../assets/img/alfajoresMaizena.jpg"
+            alt="Torta de chocolate"
+            />
+            <h3>Alfajores</h3>
+            <p>Tradcionales alfajores de maizena</p>
+            <button class="btn-agregar-carrito">Añadir al Carrito</button>
+          </div> -->
+      </div>
+        </aside>
+  
+      <aside>
+        <h2 class="titulo-productos">Nuestras Tortas</h2>
+      <div class="productosDestacados productos-grid">
           <div class="producto">
             <img
               src="../assets/img/tortaBlanca-cumpleaños.jpg"
@@ -173,17 +215,65 @@
             <button class="btn-agregar-carrito">Añadir al Carrito</button>
           </div>
         </div>
-      </section>
-      <aside class="aside-promociones">
-        <h3>Ofertas Especiales</h3>
-        <p>¡Obtén un 10% de descuento en tu primer pedido!</p>
-        <img src="../assets/img/promo.jpg" alt="Promoción pastel" />
-        <h4>Suscríbete!!!</h4>
-        <p>Recibe novedades y descuentos directamente en tu correo.</p>
-        <button class="btn-suscribirse">Suscribirse</button>
       </aside>
-    </main>
+ 
+        <aside class="aside aside-left">
+          <h2 class="titulo-productos">Ofertas Especiales</h2>
+          <h4>No te pierdas nuestras ofertas!</h4>
+          <p>¡Obtén un 10% de descuento en tu primer pedido!</p>
+          <li>20% de descuento en tortas de chocolate</li>
+          <li>15% de descuento en pasteles de cumpleaños</li>
+          <li>10% en todos los pedidos de catering</li>
 
+                <h4>Suscríbete!!!</h4>
+          <p>Recibe novedades y descuentos directamente en tu correo.</p>
+          <div class="contenedor">
+            <button class="btn-suscribirse">Suscribirse</button>
+        </div>
+        </aside>        
+        <h2 class="titulo-productos">Nuestros Cupcakes</h2>
+        <div class="productosDestacados productos-grid">
+            <div class="producto">
+        <img
+        src="../assets/img/cupcake-frutilla-chocolate.jpg"
+        alt="Cupcake"
+        />
+        <h3>Cupcake</h3>
+        <p>Dulce decoración de rosas</p>
+        <button class="btn-agregar-carrito">Añadir al Carrito</button>
+      </div>
+  
+      <div class="producto">
+        <img
+          src="../assets/img/cupcake-hombrecito.jpg"
+          alt="Cupcake"
+        />
+        <h3>Dulce de leche</h3>
+        <p>Dulce cupcake de vainilla</p>
+        <button class="btn-agregar-carrito">Añadir al Carrito</button>
+      </div>
+      <div class="producto">
+        <img
+          src="../assets/img/cupcake-frutilla-chocolate.jpg"
+          alt="Cupcake"
+        />
+        <h3>Frutilla</h3>
+        <p>Dulce cupcake de frutilla y crema</p>
+        <button class="btn-agregar-carrito">Añadir al Carrito</button>
+      </div>
+      <div class="producto">
+        <img
+          src="../assets/img/cupcake-hombrecito.jpg"
+          alt="Cupcake"
+        />
+        <h3>Frutilla</h3>
+        <p>Dulce cupcake de frutilla y crema</p>
+        <button class="btn-agregar-carrito">Añadir al Carrito</button>
+      </div>
+    </div>
+  </main>
+      
+      
     <footer class="footer">
       <a href="#header">
         <img
@@ -193,9 +283,7 @@
         />
       </a>
 
-      <!-- Contenedor principal del footer -->
       <div class="footerContainer">
-        <!-- Sección de navegación principal -->
         <div class="footerNav">
           <nav class="footerBusqueda">
             <img src="../assets/img/logo-explorar.png" alt="Logo busqueda" />
@@ -224,7 +312,6 @@
         </div>
       </div>
 
-      <!-- Sección de redes sociales -->
       <div class="footerSocial">
         <h4>¡Síguenos!</h4>
         <div class="redesSociales">
@@ -243,7 +330,6 @@
         </div>
       </div>
 
-      <!-- Información legal -->
       <div class="footerLegal">
         <p>&copy; 2024 Dulces y Sueños. Todos los derechos reservados.</p>
       </div>
