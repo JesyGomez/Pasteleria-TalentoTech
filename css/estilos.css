@@ -531,6 +531,9 @@ h2.titulo-productos {
     background-color: #f9f9f9; 
     padding: 2rem 0;
     text-align: center;
+    h4{
+        font-size: 2rem;
+    }
 }
 .testimonios-grid {
     display: grid;
@@ -546,7 +549,7 @@ h2.titulo-productos {
     background-color: #fff;
     padding: 1.5rem;
     border-radius: 8px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     font-style: italic;
     position: relative;
 }
@@ -565,23 +568,6 @@ h2.titulo-productos {
     color: #333;
 }
 
-.testimonio::before {
-    content: '“'; /* Comillas iniciales decorativas */
-    font-size: 3rem;
-    color: var(--color-acento); /* Color para las comillas */
-    position: absolute;
-    top: -10px;
-    left: -10px;
-}
-
-.testimonio::after {
-    content: '”'; /* Comillas finales decorativas */
-    font-size: 3rem;
-    color: var(--color-acento); /* Color para las comillas */
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
 
 
 /* Ajustes para pantallas pequeñas */
@@ -656,9 +642,9 @@ h2.titulo-productos {
 
 .imagenTortasPrecio {
     width: 300px; 
-    height: 200px;
+    height: 180px;
     object-fit: cover;
-    max-height: 500px;
+    max-height: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -998,6 +984,9 @@ h2.titulo-productos {
 /* Redes Sociales */
 .footerSocial {
     text-align: center;
+    h4{
+        font-size: 1.8rem;
+    }
 }
 
 .redesSociales {
