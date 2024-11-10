@@ -264,6 +264,7 @@ h2.titulo-productos {
     width: 100%; 
     height: auto;
     object-fit: cover;
+    object-position: center 80%;/* Desplazo la imagen hacia abajo*/
     max-height: 500px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -652,16 +653,25 @@ h2.titulo-productos {
     margin-bottom: 20px;
 
 }
-.galeriaPrecios :hover{
-    transform: scale(1.1);
 
+.imagenTortasPrecio {
+    width: 300px; 
+    height: 200px;
+    object-fit: cover;
+    max-height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-@media screen {
+
+@media only screen and (max-width: 768px) {
     .galeriaPrecios{
+        display: block;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         width: 90%;
+        
     }
 }
+
 .precios {
     grid-area: precios;
 }
