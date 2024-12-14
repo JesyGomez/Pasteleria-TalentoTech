@@ -29,32 +29,32 @@
     <div class="contactForm">
         <h1>¡Envíanos un mensaje!</h1>
         <form id="formulario" action="https://formsubmit.co/pasteleriadelicias@gmail.com" method="POST">
-            <div class="formGrid">
-                <div class="inputField">
-                    <span>Nombre</span>
-                    <input type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre">
-                    <div class="errorMessage" id="errorNombre"></div>
-                </div>
-                <div class="inputField">
-                    <span>Email</span>
-                    <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com">
-                    <div class="errorMessage" id="emailError"></div>
-                </div>
-                <div class="inputField">
-                    <span>Teléfono</span>
-                    <input type="text" placeholder="011 1234 5678" id="telefono" name="telefono">
-                    <div class="errorMessage" id="telefonoError"></div>
-                </div>
-                <div class="inputField">
-                    <span>Mensaje</span>
-                    <textarea placeholder="Déjanos tu mensaje" id="mensaje" name="mensaje" minlength="10"></textarea>
-                    <div class="errorMessage" id="mensajeError"></div>
-                </div>
-                <div class="inputField">
-                    <input type="submit" value="Enviar" class="submitBtn">
-                </div>
-            </div>
-        </form>
+          <div class="formGrid">
+              <div class="inputField">
+                  <span>Nombre</span>
+                  <input type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre">
+                  <div class="errorMessage" id="errorNombre"></div>
+              </div>
+              <div class="inputField">
+                  <span>Email</span>
+                  <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+                  <div class="errorMessage" id="emailError"></div>
+              </div>
+              <div class="inputField">
+                  <span>Teléfono</span>
+                  <input type="text" placeholder="011 1234 5678" id="telefono" name="telefono" required>
+                  <div class="errorMessage" id="telefonoError"></div>
+              </div>
+              <div class="inputField">
+                  <span>Mensaje</span>
+                  <textarea placeholder="Déjanos tu mensaje" id="mensaje" name="mensaje" minlength="10" required></textarea>
+                  <div class="errorMessage" id="mensajeError"></div>
+              </div>
+              <div class="inputField">
+                  <input type="submit" value="Enviar" class="submitBtn">
+              </div>
+          </div>
+      </form>
     </div>
     <!-- Información de contacto -->
     <div class="contactInfo">
@@ -142,5 +142,6 @@
           <p>&copy; 2024 Dulces y Sueños. Todos los derechos reservados.</p>
         </div>
       </footer>
+      <script src="../js/script.js"></script>
 </body>
 </html>

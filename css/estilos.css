@@ -398,7 +398,37 @@ h2.titulo-productos {
     .btn-agregar-carrito:hover {
         background-color:var(--color-boton-hover);
     }
-
+    .producto {
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin: 10px;
+        text-align: center;
+        transition: background-color 0.3s;
+    }
+    
+    .producto.añadido {
+        background-color: #d4edda; /* Resaltado verde claro */
+    }
+    
+    .boton {
+        padding: 10px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .mensaje-confirmacion {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+        font-weight: bold;
+        display: none;
+    }
+    
     /* Aside productos */
     .aside-promociones {
         flex: 1;
@@ -576,7 +606,7 @@ h2.titulo-productos {
         padding: 1rem 0;
     }
     .testimonios-grid {
-        grid-template-columns: 1fr; /* Cambie a una sola columna */
+        grid-template-columns: 1fr; 
         padding: 1rem;
         gap: 1rem; 
     }
@@ -936,6 +966,28 @@ h2.titulo-productos {
 .btn-eliminar {
     color: red;
     font-size: 1.5rem;
+}
+
+#tablaCarrito {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tablaCarrito td, #tablaCarrito th {
+    padding: 10px;
+    text-align: center;
+}
+
+.btn {
+    padding: 5px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: darkred;
 }
 
 
