@@ -5,7 +5,7 @@
     --color-primario: #F5EEE6; 
     --color-secundario: #FFF8E3; 
     --color-terciario: #F3D7CA; 
-    --color-acento: #48024d; 
+    --color-acento: #ad04b9c8; 
     
     /* Colores de texto */
     --color-texto-primario: #333333; 
@@ -16,7 +16,7 @@
     
     /* Colores de botones */
     --color-boton: var(--color-acento);
-    --color-boton-hover: #f311e777; 
+    --color-boton-hover: #fb08eff8; 
     
     /* Colores de enlaces */
     --color-enlace: var(--color-acento);
@@ -24,6 +24,7 @@
     
     --color-footer-fondo: var(--color-secundario);
     --color-header-fondo: var(--color-primario);
+    /* Tema claro */
 }
 *{
     margin: 0;
@@ -33,12 +34,50 @@
 }
 /* Estilos generales */
 body {
-    font-family: "Open Sans", serif;
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(to right top, #f9f0f5, #f5e8ef, #f1e0ea, #eed8e5, #ead1e0, #f1dce7, #f8e7ee, #ffffff);
-}
-
+    background-color: #1b1b32e3;
+    color: #fbc6fb;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  /* Estilos para modo claro */
+  body.light-mode {
+    background-color: #f2eef2;
+    color: #1b1b32;
+  }
+  body.light-mode .container {
+    background-color: #f2eef2;
+  }
+  
+  body.light-mode .terminos p {
+    color: #1b1b32;
+  }
+  
+  body.light-mode footer {
+    background-color: #f2eef2;
+    color: #1b1b32;
+  }
+  
+  body.light-mode .redes a {
+    color: #1b1b32;
+  }
+  
+  .toggle-theme-btn {
+    background-color: transparent;
+    border: none;
+    color: #f2eef2;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin: 10px;
+  }
+  
+  body.light-mode .toggle-theme-btn {
+    color: #1b1b32;
+  }
+  
+  .toggle-theme-btn:hover {
+    color: #ff5ffc;
+  }
+  
+  
 /* Estilo del header */
 header {
     width: 100%;
@@ -124,7 +163,38 @@ header .carrito {
     }
 }
 
-
+/* Tema claro */
+.tema-claro {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .tema-claro table, .tema-claro th, .tema-claro td {
+    background-color: #f9f9f9;
+  }
+  
+  /* Tema oscuro */
+  .tema-oscuro {
+    background-color: #333;
+    color: #ffffff;
+  }
+  
+  .tema-oscuro table, .tema-oscuro th, .tema-oscuro td {
+    background-color: #444;
+  }
+  
+  .tema-oscuro button {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  /* Estilo adicional para botones en tema oscuro/claro */
+  button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
 main {
     padding: 20px;
     text-align: center;
@@ -159,7 +229,7 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    /* color: white; */
     text-align: center;
     z-index: 1;
 }
@@ -185,7 +255,7 @@ h1 {
 
 h2, h3, h4 {
     font-size: 2.5rem;
-    color: #292929d0;
+    /* color: #292929d0; */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
     letter-spacing: 1px;
@@ -196,7 +266,7 @@ h2, h3, h4 {
 .contenido p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
-    color: #fff;
+    /* color: #fff; */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     text-align: center;
     margin-top: 1rem;
@@ -206,13 +276,13 @@ h2, h3, h4 {
 p.descripcion-pasteleria {
     font-family: 'Georgia', serif;
     font-size: 1.4rem;
-    color: #400352;
+    /* color: #400352; */
     text-align: center;
     line-height: 1.6em;
     margin: 20px auto;
     max-width: 700px;
     padding: 10px;
-    background-color: #fddbe8; 
+    /* background-color: #fddbe8;  */
     border-radius: 8px;
     box-shadow: 8px 8px 8px rgb(255, 255, 255);
 }
@@ -345,7 +415,7 @@ h2.titulo-productos {
   }
   .producto {
     text-align: center;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -361,14 +431,14 @@ h2.titulo-productos {
         transform: scale(1.05);
     }
     .producto h2, h3 {
-        color: #333333;
+        /* color: #333333; */
         margin: 10px 0;
         font-size: 1.2rem;
     }
 
     .producto p {
         font-size: 1rem;
-        color: var(--color-texto-secundario);
+        /* color: var(--color-texto-secundario); */
         padding-bottom: 20px;  
     }
 
@@ -433,7 +503,7 @@ h2.titulo-productos {
     .aside-promociones {
         flex: 1;
         padding: 1.5rem;
-        background-color: #f7f7f7;
+        /* background-color: #f7f7f7; */
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         p{
@@ -450,7 +520,7 @@ h2.titulo-productos {
     }
 
     .aside-promociones h2, h3, h4 {
-        color: #333;
+        /* color: #333; */
         margin-top: 0;
         margin-bottom: 0.5rem;
         font-size: 1.2rem;
@@ -459,8 +529,8 @@ h2.titulo-productos {
     }
 
     .btn-suscribirse {
-        background-color: var(--color-enlace-hover);
-        color: white;
+        /* background-color: var(--color-enlace-hover);
+        color: white; */
         padding: 0.8rem 1.5rem;
         border: none;
         border-radius: 4px;
@@ -507,7 +577,7 @@ h2.titulo-productos {
 .nosotros p {
     font-size: 1.3rem;
     line-height: 1.6;
-    color: var(--color-texto-primario);
+    /* color: var(--color-texto-primario); */
     margin-bottom: 1.5rem;
 }
 
@@ -551,14 +621,14 @@ h2.titulo-productos {
         h4{
             font-size: 0.8rem;
             font-weight: bold;
-            color: var(--color-acento);
+            /* color: var(--color-acento); */
         }
     }
 }
 
 /* Testimonios */
 .testimonios {
-    background-color: #f9f9f9; 
+    /* background-color: #f9f9f9;  */
     padding: 2rem 0;
     text-align: center;
     h4{
@@ -576,7 +646,7 @@ h2.titulo-productos {
 
 /* Estilos para cada testimonio */
 .testimonio {
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 1.5rem;
     border-radius: 8px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
@@ -590,12 +660,12 @@ h2.titulo-productos {
     margin-top: 1rem;
     font-weight: bold;
     font-size: 0.9rem;
-    color: #555;
+    /* color: #555; */
 }
 .testimonios h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    color: #333;
+    /* color: #333; */
 }
 
 
@@ -625,8 +695,9 @@ h2.titulo-productos {
 
 /* Galeria Inicio */
 .galeriaInicio h4{
-    color: #48024d;
+    /* color: #48024d; */
     font-size: 3rem;
+    padding: 15px;
 }
 .container{
     margin:20px 0 0 100px;
@@ -708,13 +779,13 @@ h2.titulo-productos {
     margin-top: 20px;
     font-family: Arial, sans-serif;
     font-size: 1.2rem;
-    color: #333;
+    /* color: #333; */
 }
 
 /* Estilo para las cabeceras */
 .tablaPrecios thead th {
     background-color: #ffb3c1; 
-    color: #333;
+    /* color: #333; */
     padding: 12px;
     text-align: left;
     font-weight: bold;
@@ -772,9 +843,9 @@ h2.titulo-productos {
     align-items: flex-start;
     gap: 40px;
     padding: 40px;
-    background-color: #f9f7f7;
+    /* background-color: #f9f7f7; */
     border-radius: 15px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.414);
     max-width: 1200px;
     margin: auto;
     flex-wrap: wrap;
@@ -993,8 +1064,8 @@ h2.titulo-productos {
 
 /* Footer */
 .footer {
-    background-color: var(--color-fondo);
-    color: var(--color-texto-primario);
+    /* background-color: var(--color-fondo); */
+    /* color: var(--color-texto-primario); */
     text-align: center;
     font-size: 1.5rem;
     padding: 20px;
@@ -1018,19 +1089,37 @@ h2.titulo-productos {
 .footerBusqueda, .footerAyuda {
     text-align: center;
 }
+.footerBusqueda i, .footerAyuda i {
+    font-size: 2.2rem; /* Cambia el valor según el tamaño deseado */
+}
 
 .footerBusqueda ul, .footerAyuda ul {
     list-style: none;
     padding: 0;
+    color: var(--color-acento);
 }
 
 .footerBusqueda li, .footerAyuda li {
-    margin: 8px 0;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1.8rem;
+    box-shadow: 0 4px 8px rgba(163, 114, 171, 0.947);
+
 }
 
 .footerBusqueda img, .footerAyuda img {
     display: block;
     margin: 0 auto 10px;
+}
+
+/* Estilos para los enlaces */
+.footerBusqueda a, .footerAyuda a {
+    text-decoration: none; 
+    color: var(--color-acento); 
+}
+
+.footerBusqueda a:hover, .footerAyuda a:hover {
+    opacity: 0.8;
 }
 
 /* Redes Sociales */
@@ -1073,7 +1162,7 @@ h2.titulo-productos {
     box-shadow: 0 4px 8px rgba(139, 1, 160, 0.947);
     margin: 20px auto;
     padding: 15px;
-    color: #fff;
+    /* color: #fff; */
     transition: transform 0.3s ease;
 }
 
@@ -1088,11 +1177,10 @@ h2.titulo-productos {
     position: fixed;
     bottom: 25px;
     right: 25px; 
-    background-color: #25D366; 
+    /* background-color: #25D366;  */
     border-radius: 50%; 
-    padding: 15px; 
-    color: #fff; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    /* padding: 15px;  */
+    box-shadow: 0 4px 8px rgba(207, 205, 205, 0.3); 
     z-index: 1000;
     transition: transform 0.3s ease;
 }

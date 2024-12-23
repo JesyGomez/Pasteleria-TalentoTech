@@ -150,3 +150,19 @@ if (formulario) {
     }
   });
 }
+/* ==========================
+  Función para alternar entre modo claro y oscuro
+========================== */
+
+function toggleTheme() {
+  const body = document.body;
+  const icon = document.getElementById("dl-icon");
+
+  body.classList.toggle("light-mode");
+
+  if (body.classList.contains("light-mode")) {
+    icon.classList.replace("bi-moon-stars-fill", "bi-sun-fill");
+  } else {
+    icon.classList.replace("bi-sun-fill", "bi-moon-stars-fill");
+  }
+}
