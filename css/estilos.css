@@ -28,7 +28,7 @@
 }
 *{
     margin: 0;
-    padding: 10px;
+    padding: 0;
     box-sizing: border-box;
 
 }
@@ -111,17 +111,17 @@ body {
     font-size: 1rem; 
 }
 
-
 /* Estilo del header */
-header {
+.custom-header {
     width: 100%;
     padding: 10px 20px;
+    margin-top: 60px; /* ajusta la altura del header porque ahora esta la barra del clima */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header a img {
+.custom-header a img {
     width: 120px; 
     height: 120px;
     border-radius: 50%; 
@@ -132,12 +132,12 @@ header a img {
 }
 
 /* Estilos para el menú */
-header nav {
+.custom-header nav {
     flex-grow: 1;
     margin-left: 20px;
 }
 
-header ul {
+.custom-header ul {
     list-style: none;
     display: flex;
     justify-content: center; 
@@ -147,7 +147,7 @@ header ul {
     margin: 0;
 }
 
-header li a {
+.custom-header li a {
     text-decoration: none;
     color: var(--color-acento);
     font-size: 1.6rem;
@@ -155,16 +155,16 @@ header li a {
     padding: 5px 10px;
 }
 
-header li a:hover {
+.custom-header li a:hover {
     color: var(--color-enlace-hover); 
 }
 
-/* Estilos específicos para el carrito */
-header .carrito {
+.custom-header .carrito {
     width: 60px;
-    height: auto;
+    height: auto; 
     vertical-align: middle;
 }
+
 
 /* Media query para pantallas pequeñas del header*/
 @media (max-width: 768px) {

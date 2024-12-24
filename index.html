@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
-<body data-bs-theme="light">
+<body class="light-mode" data-bs-theme="light">
     <div id="barra-clima" class="fixed-top p-2 d-flex justify-content-between align-items-center">
         <button id="obtenerClima" class="btn btn-light">Obtener Clima</button>
         <div id="resultadoClima" class="d-flex gap-4">
@@ -18,23 +18,48 @@
         </div>
     </div>
     
-    <header id="header">
-        <nav class="d-flex align-items-center">
-            <div class="logo">
-                <a href="index.html"><img src="./assets/img/logo-pasteleria.png" alt="Logo de la Pastelería Dulces y Sueños"></a>
-            </div>
-            <ul class="menu flex-grow-1 text-center list-unstyled d-flex justify-content-center m-0">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/precios.html">Precios</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a href="./pages/carrito.html"><img class="carrito" src="./assets/img/carrito-1.png" alt="Logo de un carrito de compras"></a></li>
-            </ul>
-            <button class="toggle-theme-btn" onclick="toggleTheme()" class="btn btn-dark">
-                <i id="dl-icon" class="bi bi-moon-stars-fill"></i>
-            </button>
-        </nav>
-    </header>
+       
+    <header id="header" class="header custom-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./assets/img/logo-pasteleria.png" alt="Logo de la Pastelería Dulces y Sueños">
+                    </a>
+                    <!-- Botón de menú hamburguesa -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Menú -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/precios.html">Precios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/carrito.html">
+                                    <img class="carrito" src="./assets/img/carrito-1.png" alt="Logo de un carrito de compras">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Botón de cambio de tema -->
+                        <button class="toggle-theme-btn" onclick="toggleTheme()">
+                            <i id="dl-icon" class="bi bi-moon-stars-fill"></i>
+                        </button>
+                </div>
+            </nav>
+        </header>
+   
 
     <main>
         <section class="VideoFondo">
