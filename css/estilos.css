@@ -764,6 +764,18 @@ h2.titulo-productos {
     
 }
 .galeriaPrecios{
+    display: flex;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.galeriaCarrito{
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -774,6 +786,7 @@ h2.titulo-productos {
     margin-bottom: 20px;
 
 }
+
 
 .imagenTortasPrecio {
     width: 300px; 
@@ -786,10 +799,12 @@ h2.titulo-productos {
 
 @media only screen and (max-width: 768px) {
     .galeriaPrecios{
-        display: block;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         width: 90%;
         
+    }
+    .galeriaCarrito{
+        display: block;
     }
 }
 
@@ -1311,7 +1326,7 @@ h2.titulo-productos {
         margin: 5px;
         width: 350px;
         height: 90px;
-        display: flex;
+        display: contents;
         justify-content: center;
         gap: 5px;
       }
