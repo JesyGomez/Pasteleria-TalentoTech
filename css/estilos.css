@@ -957,7 +957,7 @@ h2.titulo-productos {
 
 .contactInfo {
     background-color: #fff;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     width: 100%;
     max-width: 400px;
@@ -1253,6 +1253,9 @@ h2.titulo-productos {
     
     .tablaPrecios table {
         font-size: 14px;
+    }
+    .infoItem{
+        display: contents;
     }
 }
 
